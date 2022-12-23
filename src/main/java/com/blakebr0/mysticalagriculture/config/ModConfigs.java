@@ -51,6 +51,8 @@ public final class ModConfigs {
     public static final ForgeConfigSpec.IntValue SOULSTONE_SPAWN_SIZE;
     public static final ForgeConfigSpec.IntValue SOULSTONE_SPAWN_MIN_Y;
     public static final ForgeConfigSpec.IntValue SOULSTONE_SPAWN_MAX_Y;
+    
+    public static final ForgeConfigSpec.BooleanValue DISABLE_BONEMEAL;
 
     // Common
     static {
@@ -96,6 +98,9 @@ public final class ModConfigs {
         FAKE_PLAYER_WATERING = common
                 .comment("Should fake players be able to use watering cans?")
                 .define("fakePlayerWatering", true);
+        DISABLE_BONEMEAL = common
+                .comment("Should we disable bonemeal for MysticalAgriculture's crops?")
+                .define("disable_bonemeal", true);
         common.pop();
 
         common.comment("World generation options.").push("World");
