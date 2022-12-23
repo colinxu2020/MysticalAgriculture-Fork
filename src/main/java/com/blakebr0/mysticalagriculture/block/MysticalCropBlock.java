@@ -37,7 +37,7 @@ public class MysticalCropBlock extends CropBlock implements ICropProvider {
 
     @Override
     public boolean isBonemealSuccess(Level world, RandomSource random, BlockPos pos, BlockState state) {
-        return false;
+        return !ModsConfig.DISABLE_BONEMEAL;
     }
 
     @Override
